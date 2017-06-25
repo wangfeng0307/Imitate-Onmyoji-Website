@@ -1,0 +1,733 @@
+/*--------------------------------------王志立*/
+/*第一个菱形部分开始*/
+/*头部导航部分开始*/
+.main_one_section{
+    width: 1580px;
+    height: 912px;
+    position: relative;
+    top: 0px;
+}
+.main_one_section div.top_first{
+    width:100%;
+    height: 65px;
+    background-color: #080915;
+    position:absolute;
+    top: 0;
+    z-index: 5;
+}
+.top_first .top_first_inner{
+    width: 1230px;
+    height: 65px;
+    margin:0 auto;
+    /*background-color: red;*/
+}
+.top_first_inner ul{
+    width: 990px;
+    height: 33px;
+    float: left;
+    padding-top: 16px;
+    /*background-color: green;*/
+}
+.top_first_inner ul li{
+    width: 164px;
+    height: 33px;
+    float: left;
+    background-color: red;
+    border-right: 1px dashed white;
+}
+.top_first_inner ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 33px;
+    text-decoration: none;
+    background-color: #080915;
+    color: white;
+    font-size: 18px;
+    font-family:  'Microsoft Yahei';
+
+}
+.top_first_inner ul li a span{
+    display: block;
+    height: 100%;
+    text-align: center;
+    margin:0 auto;
+    /*margin-left: 10px;*/
+}
+.top_first_inner ul li a b{
+
+    display: block;
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 39px;
+    width: 24px;
+    height: 24px;
+    background:url("../images/index_z_d.png") no-repeat -820px -51px;
+    display: none;
+}
+.top_first_inner .first_inner_right{
+    width: 231px;
+    height: 34px;
+    line-height: 34px;
+    /*background-color: yellow;*/
+    float: right;
+    padding-top: 16px;
+    vertical-align:middle;
+    position: relative;
+}
+.first_inner_right .inner_right_arrows{
+    width: 231px;
+    height: 34px;
+    position:absolute;
+    top: 16px;
+    background:url("../images/gzh_bg_7a090c1 (1).png") no-repeat 0 0;
+}
+.first_inner_right .inner_right_a{
+    position: absolute;
+}
+.top_first_inner .first_inner_right span{
+    display: inline-block;
+    float: left;
+    color:white;
+    font-size: 14px;
+    margin-left: 10px;
+    /*background-color: blue;*/
+    width: 113px;
+    height: 33px;
+}
+.first_inner_right a{
+    display:inline-block;
+    /*background-color: pink;*/
+    width: 25px;
+    margin-top: 5px;
+    height: 25px;
+    float: left;
+}
+.first_inner_right a.inner_right_one{
+    background:url("../images/index_z_d.png") no-repeat -783px -149px;
+}
+.first_inner_right a.inner_right_two{
+    background:url("../images/index_z_d.png") no-repeat -881px -51px;
+}
+.first_inner_right a.inner_right_three{
+    background:url("../images/index_z_d.png") no-repeat -760px -150px;
+    width: 24px;
+    height: 24px;
+}
+.first_inner_right a.inner_right_four{
+    background:url("../images/index_z_d.png") no-repeat -862px -124px;
+    width: 25px;
+    height: 24px;
+}
+/*头部导航部分结束*/
+/*中间部分开始*/
+.main_one_section .top_middle{
+    width: 1580px;
+    height: 912px;
+    background-color: red;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+}
+.main_one_section .top_middle .top_middle_left{
+    width: 960px;
+    height: 912px;
+    margin-left: -170px;
+    float: left;
+}
+.main_one_section .top_middle .top_middle_right{
+    width: 790px;
+    height: 912px;
+    /*margin-right: 0;*/
+    float: right;
+}
+.top_middle .yinys{
+    width: 79px;
+    height: 260px;
+    background:url("../images/logo_1df3473.png");
+    position: absolute;
+    top:85px;
+    left: 0;
+}
+.top_middle .figure{
+    width: 1419px;
+    height: 925px;
+    background: url("../images/person_b924fab.png");
+    position: absolute;
+    /*top: 85px;*/
+    left: 10px;
+}
+.top_middle .cloud{
+    width: 397px;
+    height: 116px;
+    background:url("../images/cloud1_6dc33a8.png");
+    position: absolute;
+    left:-61px;
+    top:540px;
+}
+.top_middle .wind{
+    width: 786px;
+    height: 132px;
+    /*background-color: red;*/
+    background:url("../images/slogon_8064a10.png");
+    position: absolute;
+    top: 530px;
+    left:410px;
+}
+/*第一个菱形部分结束*/
+/*--------------------------------------王志立*/
+
+/*------------------------------------黎人凤*/
+#forth_page {
+    position: relative;
+    width: 1580px;
+    height: 841px;
+    padding-top: 50px;
+    background: url(../images/meishu_bg_cdf30f6.jpg) 0 0 no-repeat;
+}
+.com_circle_tabs {
+    position: absolute;
+    left: -2px;
+    top: 50%;
+    margin-top: -115px;
+    width: 116px;
+    height: 253px;
+}
+.com_title.title2 {
+     margin: 0 auto;
+     width: 542px;
+     height: 99px;
+     background-image: url(../images/title2_ef2ebb1.png);
+ }
+#forth_page .real_pic_txt {
+    line-height: 33px;
+    color: #ba9f75;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+#forth_page .side_pic {
+    position: absolute;
+    top: -50px;
+    right: -487px;
+}
+#forth_page .forthpage_container {
+    width: 1200px;
+    margin: auto;
+}
+#forth_page .jietu {
+    position: absolute;
+    left: 50%;
+    margin-left: -555px;
+    top: 215px;
+    width: 660px;
+}
+#forth_page .pic_wrap {
+    margin-bottom: 10px;
+    width: 659px;
+    height: 471px;
+    position: relative;
+    background: url(../images/pic_wrap_6c7a056.png);
+}
+#forth_page .pic_list {
+    position: relative;
+    width: 599px;
+    height: 387px;
+    padding: 3px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #c5baae;
+    box-shadow: 0 2px 3px #635240;
+    overflow: hidden;
+}
+#forth_page .lightBox {
+    display:inline-block;
+    width: 599px;
+    height: 387px;
+
+}
+#forth_page .big_btn {
+    background-position: -734px -51px;
+}
+#forth_page .big_btn {
+    position: absolute;
+    width: 41px;
+    height: 42px;
+    bottom: 36px;
+    right: 36px;
+    background:url(../images/index_z_d844bc8.png)-734px -51px no-repeat;
+}
+#forth_page .picScroll_nav {
+    width: 448px;
+    margin: 0 auto;
+    position: relative;
+}
+#forth_page .prev, #forth_page .next {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: 17px;
+}
+#forth_page .prev {
+    left: 0;
+    background:url(../images/index_z_d844bc8.png) -850px -150px no-repeat;
+}
+#forth_page .picScroll_nav .tempWrap {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 370px;
+}
+#forth_page .side_pic {
+    position: absolute;
+    top: -50px;
+    right: -487px;
+    background:url(../images/index_z_d844bc8.png)-884px -150px no-repeat;
+}
+#forth_page .next {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: 17px;
+    right: 0;
+    background:url(../images/index_z_d844bc8.png) -755px -175px no-repeat;
+}
+#forth_page .picScroll_nav .pic_btn_container {
+    position: relative;
+    width: 342px;
+    padding-left: 2px;
+    height: 68px;
+    overflow: hidden;
+    width: 740px;
+    left: 0px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+#forth_page .picScroll_nav .pic_btn {
+    float: left;
+    width: 60px;
+    margin: 0 7px;
+}
+
+#forth_page .picScroll_nav .pic_btn img {
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+#forth_page .picScroll_nav .pic_btn.active img {
+    border: 4px solid #ffda68;
+}
+/*菱形----------------------------------------------菱形------------*/
+.right-click{
+    width: 90px;
+    height: 268px;
+    /*background: red;*/
+    position: fixed;
+    top:50%;
+    margin-top: -180px;
+    right: 0;
+    z-index: 99;
+    color: #fff;
+
+}
+.right-click li{
+    width: 100px;
+    height: 50px;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.right-click li span{
+    font-size: 20px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+.right-click li .span1{
+   opacity: 1;
+
+}
+.right-click li i{
+    position: relative;
+    top: 11px;
+    left: 0px;
+    cursor: pointer;
+
+}
+/*------------------------------------------邓赞强*/
+/*音乐模块*/
+#sixth_page {
+    position: relative;
+    width: 100%;
+    height: 841px;
+    padding-top: 50px;
+    background: url("../images/shengyou_bg_61ae7f9.jpg") 0 0 no-repeat;
+}
+/*标题 音乐大师*/
+.music_dashi {
+    width: 597px;
+    height: 99px;
+    background-image: url('../images/title4_f471cce.png');
+    margin: 0 auto;
+    margin-bottom: 58px;
+}
+/*主角声优*/
+.music_cv_zhuJue {
+    width: 1240px;
+    height: 540px;
+    margin: 0 auto;
+
+}
+.music_cv_zhuJue .music_top{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.music_cv_zhuJue .music_top a {
+    display: inline-block;
+    width: 152px;
+    height: 53px;
+    line-height: 52px;
+    text-align: center;
+    font-size: 25px;
+    color: #a8813c;
+    background: url("../images/zj_icon_b690ee2.png");
+}
+.music_cv_zhuJue .music_top a:hover{
+    background: url("../images/zj_icon_ac_72c4a97.png");
+}
+.music_cv_zhuJue .music_top .active {
+    background: url("../images/zj_icon_ac_72c4a97.png")
+}
+.music_cv_zhuJue .music_top .cv_shiShen{
+    margin-left: 12px;
+}
+
+
+.cv_zhuJue_pict{
+    width: 1240px;
+    height: 434px;
+    display: block;
+    margin: 0 auto;
+    display: block;
+}
+.cv_zhuJue_pict li{
+    width: 283px;
+    height: 434px;
+    background: url("../images/card_bg_cv_1506b47.png");
+    float: left;
+    margin-right: 13px;
+    margin-left: 13px;
+}
+.cv_zhuJue_pict li .pic {
+    width: 283px;
+    height: 342px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.cv_zhuJue_pict li .pic img {
+    display: block;
+    margin: 14px auto;
+
+}
+.cv_zhuJue_pict li .txt{
+    width: 270px;
+    height: 46px;
+    padding-left: 13px;
+}
+.cv_zhuJue_pict li  .cv_play_btn{
+    width: 160px;
+    height: 26px;
+    font-size: 16px;
+}
+.cv_zhuJue_pict li  .cv_play_btn a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    float: right;
+    background: url("../images/index_z_d844bc8.png") no-repeat -734px -124px;
+}
+
+.cv_zhuJue_pict li .txt p{
+    width: 254px;
+    line-height: 20px;
+    color: #aba7a5;
+    font-size: 14px;
+}
+
+.ss_pict ul{
+    width: 200%;
+    height: 434px;
+}
+
+
+
+.music_cv_zhuJue .ss_pict{
+    display: none;
+    overflow: hidden;
+}
+.ss_nav_wrap {
+    width: 235px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: none;
+}
+.ss_nav_wrap a {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+}
+.ss_nav_wrap .prev {
+    background: url("../images/index_z_d844bc8.png") no-repeat -850px -150px;
+}
+.ss_nav_wrap .next {
+    background: url("../images/index_z_d844bc8.png") no-repeat -829px -150px;
+}
+
+.ss_nav_wrap .cv_ss_nav{
+    display: inline-block;
+    width: 58px;
+    height: 10px;
+}
+.ss_nav_wrap .cv_ss_nav li {
+    float: left;
+
+}
+
+/*------------------------------------------邓赞强*/
+/*--------------------------------------粟晨卓*/
+.five {
+    position: relative;
+    background: url("../images/wanfa_bg_8d29f35.jpg") no-repeat;
+    width: 1580px;
+    height: 996px;
+    padding-top: 50px;
+}
+.five_title {
+    width: 640px;
+    height: 99px;
+    background: url("../images/title3_528a9ed.png");
+    margin: 0 auto 58px;
+}
+.five_nav {
+    width: 1200px;
+    height: 627px;
+    margin: 300px auto 0 ;
+    opacity: 0;
+}
+.five_center {
+    width: 659px;
+    height: 471px;
+    background: url("../images/pic_wrap_6c7a056.png");
+    margin: 0 auto;
+    position: relative;
+}
+.five_ul {
+    width: 535px;
+    height: 367px;
+    position: absolute;
+    list-style: none;
+    top: 235px;
+    left: 329px;
+    border: 1px solid #aa9987;
+    margin: -183px 0 0 -267px;
+    padding: 3px;
+    overflow: hidden;
+    box-shadow: -1px 0 8px 0 #aa9987;
+}
+.five_ul li {
+    float: left;
+    position: absolute;
+}
+.five_p1 {
+    position: absolute;
+    top: 435px;
+    left: 60px;
+    font-size: 14px;
+    color: #644f26;
+}
+.five_leftBtn {
+    position: absolute;
+    margin-top: 60px;
+    left: 265px;
+}
+.five_ul2 {
+    list-style: none;
+    width: 215px;
+    height: 213px;
+}
+.five_ul2 li {
+    float: left;
+}
+.five_ul2 .five_li_dm {
+    position: absolute;
+    top: 0;
+    left: -460px;
+    width: 139px;
+    height: 139px;
+    background: url("../images/left_btn1_facceb5.png");
+    text-align: center;
+    font: 18px/139px "微软雅黑";
+}
+.five_ul2 .five_li_dm em {
+    width: 88px;
+    height: 88px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 22px;
+    left: -8px;
+    border: 4px solid #FFDA68;
+    z-index: 1;
+    opacity: 0;
+}
+.five_ul2 .five_li_bgyx em {
+    width: 88px;
+    height: 88px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 21px;
+    left: -9px;
+    border: 4px solid #FFDA68;
+    z-index: 1;
+    opacity: 0;
+}
+.five_ul2 .five_li_LBS em {
+    width: 88px;
+    height: 88px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 22px;
+    left: -8px;
+    border: 4px solid #FFDA68;
+    z-index: 1;
+    opacity: 1;
+}
+.five_ul2 .five_li_bgyx {
+    position: absolute;
+    top: 70px;
+    left: -530px;
+    width: 139px;
+    height: 139px;
+    background: url("../images/left_btn2_fc1784f.png");
+    text-align: center;
+    font: 18px/139px "微软雅黑";
+}
+.five_ul2 .five_li_LBS {
+    position: absolute;
+    top: 140px;
+    left: -460px;
+    width: 139px;
+    height: 139px;
+    background: url("../images/left_btn3_48cc73e.png");
+    text-align: center;
+    font: 18px/139px "微软雅黑";
+}
+.five_ul2 a {
+    color: white;
+    display: block;
+    width: 79px;
+    height: 79px;
+    text-decoration: none;
+    position: absolute;
+    left:30px;
+}
+.five_rightBtn {
+    position: absolute;
+    margin-top: 60px;
+    right: -300px;
+    top: 0;
+}
+.five_ul3 {
+    list-style: none;
+    width: 215px;
+    height: 213px;
+}
+.five_ul3 li {
+    float: left;
+}
+.five_ul3 .five_li_dj {
+    position: absolute;
+    right: 100px;
+    width: 139px;
+    height: 139px;
+    background: url("../images/right_btn1_2498714.png");
+    text-align: center;
+    font: 18px/139px "微软雅黑";
+}
+.five_ul3 .five_li_sssj {
+    position: absolute;
+    top: 71px;
+    right: 29px;
+    width: 139px;
+    height: 139px;
+    background: url("../images/right_btn2_a9701a7.png");
+    text-align: center;
+    font: 18px/139px "微软雅黑";
+}
+.five_ul3 .five_li_tsfb {
+    position: absolute;
+    top: 142px;
+    right: 100px;
+    width: 139px;
+    height: 139px;
+    background: url("../images/right_btn3_1de0182.png");
+    text-align: center;
+    font: 18px/139px "微软雅黑";
+}
+.five_ul3 a {
+    color: white;
+    display: block;
+    width: 79px;
+    height: 79px;
+    text-decoration: none;
+    position: absolute;
+    left:30px;
+}
+.five_ul3 .five_li_dj em {
+    width: 88px;
+    height: 88px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 22px;
+    left: -8px;
+    border: 4px solid #FFDA68;
+    z-index: 1;
+    opacity: 0;
+}
+.five_ul3 .five_li_sssj em {
+    width: 88px;
+    height: 88px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 21px;
+    left: -9px;
+    border: 4px solid #FFDA68;
+    z-index: 1;
+    opacity: 0;
+}
+.five_ul3 .five_li_tsfb em {
+    width: 88px;
+    height: 88px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 22px;
+    left: -8px;
+    border: 4px solid #FFDA68;
+    z-index: 1;
+    opacity: 0;
+}
+.ph {
+    position: absolute;
+    top: 380px;
+    left: 0px;
+}
+/*--------------------------------------粟晨卓*/

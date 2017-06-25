@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/*整个背景*/
+.warp{
+    min-width: 1200px;
+    max-width: 1920px;
+    /*width: 1920px;*/
+    position: relative;
+    margin: 0 auto;
+    height: 2930px;
+    background: url(../images/bg_b35355a.jpg) center top no-repeat;
+    overflow: hidden;
+}
+/*宣传上部*/
+.jinyuzhizhang{
+    height: 715px;
+    /*background-color: red;*/
+    position: relative;
+}
+/*logo部分*/
+.logoBegin{
+    position: absolute;
+    top: 22px;
+    left: 30px;
+    z-index: 10;
+}
+.logoBegin img {
+    float: left;
+}
+.logoBegin .images2{
+    width: 86px;
+    height: 86px;
+    margin: 0 15px 0 10px;
+}
+/*进入官网*/
+.jinyuzhizhang .index{
+    position: absolute;
+    width: 182px;
+    height: 50px;
+    display: block;
+    top: 40px;
+    right: 20px;
+    z-index: 10;
+    background: url("../images/goweb1_0724a29.png") no-repeat 0 0;
+}
+/*中心内容*/
+.jinyuzhizhang .topcon{
+    width: 1200px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 40px;
+    /*background-color: red;*/
+}
+.jinyuzhizhang .topcon img{
+    width: 754px;
+    height: 428px;
+    position: absolute;
+    top: 588px;
+    left: 220px;
+    z-index: 9;
+}
+/*二维码*/
+.jinyuzhizhang .ewm{
+    width: 136px;
+    height: 200px;
+    /*background-color: red;*/
+    position: absolute;
+    top: 505px;
+    right: 0;
+    z-index: 12;
+}
+.jinyuzhizhang .ewm-down{
+    width: 136px;
+}
+.jinyuzhizhang .ewm-down-cen{
+    width: 110px;
+    height: 110px;
+    position: relative;
+    margin: 0 auto;
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+}
+.jinyuzhizhang .ewm-down-cen img{
+    width: 111px;
+}
+.ewm-down-cen-ios{
+    float: left;
+    width: 137px;
+    height: 42px;
+    margin-top: 5px;
+    background: url("../images/downios2_dc6c480.png");
+    margin-left: -14px;
+}
+.ewm-down-cen-anr{
+    float: left;
+    width: 137px;
+    height: 41px;
+    margin-top: 5px;
+    background: url("../images/downand1_397d9a2.png");
+    margin-left: -14px;
+}
+/*背景花*/
+.flower{
+    width: 913px;
+    height: 913px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 6;
+}
+.flower .shanzi{
+    width: 807px;
+    height: 613px;
+    position: absolute;
+    z-index: 9;
+    top: -650px;
+    left: 55px;
+    background: url("../images/shanzi_8ac3a48.png") no-repeat 0 0 ;
+}
+/*人物*/
+.people{
+    width: 1330px;
+    height: 775px;
+    position: absolute;
+    z-index: 10;
+    top: -20px;
+    left: -243px;
+    opacity: 0;
+}
+.flyflower{
+    width: 1920px;
+    height: 1105px;
+    position: absolute;
+    top: 0;
+    left: -360px;
+    z-index: 9;
+}
+#people{
+    position: relative;
+}
+/*----------------------------吴境丽*/
+/*中间大背景图*/
+.wrap1 {
+    width: 100%;
+    /*height: 2703px;*/
+    height: 1919px;
+    background: url("../images/fd_1382b51.jpg") no-repeat center center;
+    position: relative;
+    top: -120px;
+}
+/*情报图片*/
+.wrap1Int {
+    height: 50px;
+    background: url("../images/newinf_title_7ce2ddf.png") no-repeat center center;
+    position: absolute;
+    top: 326px;
+    left: 50%;
+    margin-left: -600px;
+}
+.wrap1Int_ptop {
+    height: 357px;
+    position: absolute;
+    top: 115px;
+}
+.wrap1Int_ptop a{
+    display: block;
+    position: relative;
+    float: left;
+}
+.wrap1Int_ptop p {
+    height: 22px;
+    line-height: 22px;
+    color: #88661E;
+    position: absolute;
+    top: 139px;
+    left: 45px;
+}
+.wrap1Int_pbottn {
+    height: 375px;
+    position: absolute;
+    top: 416px;
+    left: 0;
+}
+.wrap1Int_pbottn .wrap1Int_pbottn5{
+    display: block;
+    position: relative;
+    float: left;
+    bottom: -79px;
+    left: 180px;
+}
+.wrap1Int_pbottn p {
+    height: 22px;
+    line-height: 22px;
+    color: #88661E;
+    position: absolute;
+    top: 139px;
+    left: 45px;
+}
+.wrap1Int_pbottn .wrap1Int_pbottn6{
+    display: block;
+    position: relative;
+    float: left;
+    bottom: -79px;
+    right: -434px;
+}
+/*----------------------------吴境丽*/
+
+/*涂菱-----------------------*/
+/*game special 开始*/
+/*大盒子*/
+.gameSpecial{
+    /*可省略*/
+    height: 545px;
+    margin: 120px auto 0;
+    position: relative;
+    z-index: 20;
+    top: 1265px;
+    /*background: pink;*/
+}
+/*下部背景图*/
+.bottonAdd{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    bottom: -158px;
+}
+#NIE-copyRight{
+    background-color: #F2ECD5;
+}
+/*specialTitle开始*/
+.gameSpecial .specialTitle{
+    width: 730px;
+    height: 47px;
+    background: url("../images/gamegood_title_ad113b8.png");
+    margin: 0 auto;
+}
+/*图片外盒子*/
+.outerWrap{
+    width: 774px;
+    height: 438px;
+    margin: 60px auto 0;
+    position: relative;
+
+}
+.outerWrap .outerWrapPic{
+    width: 774px;
+    height: 438px;
+    overflow: hidden;
+}
+.outerWrap .outerWrapPic ul{
+    width: 1000%;
+    position: relative;
+}
+.outerWrap .outerWrapPic ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*opacity: 0;*/
+}
+.outerWrapPic .picLink i{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.arrow_l,.arrow_r{
+    width: 42px;
+    height: 82px;
+    position: absolute;
+    top: 178px;
+    cursor: pointer;
+}
+.arrow .arrow_l{
+    background: url("../images/left_5f76ca5.png") no-repeat;
+    left: -177px;
+}
+.arrow .arrow_r{
+    background: url("../images/right_584f835.png") no-repeat;
+    right: -177px;
+}
+/*game special 结束*/
+/*涂菱-----------------------*/

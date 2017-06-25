@@ -1,0 +1,108 @@
+/*初始化*/
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+    margin: 0;
+    padding: 0;
+}
+img, input ,button{
+    border: none;
+}
+/*清除浮动*/
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+select, input {
+    vertical-align: middle;
+}
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+/*禁止手动修改大小*/
+textarea {
+    resize: none;
+}
+/*去掉图片底部默认空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/*公共样式*/
+/*左右浮动*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+li {
+    list-style: none;
+}
+a {
+    font-size: 12px;
+    color: #999999;
+    text-decoration: none;
+}
+/*版心*/
+.bx{
+    width: 1200px;
+    margin:0 auto;
+}
+body{
+    font-family: "Microsoft Yahei";
+}
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/font_s3umupao1jrlik9/iconfont.eot');
+    src: url('../iconfont/font_s3umupao1jrlik9/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../iconfont/font_s3umupao1jrlik9/iconfont.woff') format('woff'),
+    url('../iconfont/font_s3umupao1jrlik9/iconfont.ttf') format('truetype'),
+    url('../iconfont/font_s3umupao1jrlik9/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*div{*/
+    /*display: block;*/
+/*}*/

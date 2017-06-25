@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/*剧情模块开始*/
+/*剧情背景*/
+.plot {
+    width: 1580px;
+    height: 841px;
+    background: url("../images/juqing_bg_02c1c18.jpg");
+    position: relative;
+    padding-top: 50px;
+}
+/*剧情标题*/
+.plot-title {
+    width: 531px;
+    height: 98px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+    background: url("../images/title1_2b782f6.png") no-repeat;
+}
+/*剧情内容模块*/
+.plot-content {
+    width: 1240px;
+    height: 500px;
+    /*background-color: blue;*/
+    margin: 0 auto;
+    position: relative;
+}
+/*内容模块左侧vedio*/
+.plot-content-left {
+    width: 1000px;
+    height: 500px;
+    /*background-color: red;*/
+    margin-left: 60px;
+}
+.plot-content-left a {
+    width: 700px;
+    height: 396px;
+    display: block;
+    background: url("../images/shijieguan_video_bg_d2deb38.jpg");
+    position: relative;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+/*video遮罩层*/
+.video-mask {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url("../images/mask_6b7d844.png");
+}
+/*播放按钮*/
+.plot-content-left-t .video-btn {
+    width: 74px;
+    height: 76px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -37px;
+    margin-top:-38px;
+}
+.video-btn em {
+    width: 63px;
+    height: 65px;
+    display: block;
+    background: url("../images/index_z_d844bc8.png") -560px -606px;
+}
+.video-btn i {
+    width: 12px;
+    height: 21px;
+    background: url("../images/index_z_d844bc8.png") -871px -150px;
+    position: absolute;
+    top: 22px;
+    left: 39px;
+}
+/*剧情视频底部介绍文字*/
+.plot-content-left-b {
+    width: 710px;
+    height: 149px;
+    background: url("../images/shijiehuan_txt_e88a42e.png");
+}
+.plot-content-left-b p {
+    line-height: 24px;
+    font-size: 14px;
+    padding: 30px;
+}
+/*剧情右侧人物*/
+.plot-content-right {
+    width: 490px;
+    height: 727px;
+    position: absolute;
+    top: -84px;
+    right: 45px;
+}
+/*左侧圆形按钮*/
+.plot .plot-tabs {
+    width: 116px;
+    height: 253px;
+    background: url("../images/side_juqing_0b1b064.png");
+    position: absolute;
+    left: -2px;
+    top: 50%;
+    margin-top: -115px;
+}
+
+/*世界观*/
+.plot .plot-tabs .plot-tabs-t {
+    width: 100px;
+    height: 102px;
+    background: url("../images/index_z_d844bc8.png") -321px 0;
+    position: absolute;
+    top: 10px;
+}
+/*主角*/
+.plot .plot-tabs .plot-tabs-c {
+    width: 91px;
+    height: 115px;
+    background: url("../images/index_z_d844bc8.png") -185px -138px;
+    position: absolute;
+    top: 68px;
+    left: 24px;
+    opacity: 0;
+}
+/*舞台剧*/
+.plot .plot-tabs .plot-tabs-b {
+    width: 100px;
+    height: 101px;
+    background: url("../images/index_z_d844bc8.png") -305px -253px;
+    position: absolute;
+    top: 139px;
+    opacity: 0;
+}
+
+/*剧情模块结束*/
