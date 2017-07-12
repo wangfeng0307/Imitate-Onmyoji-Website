@@ -1,239 +1,239 @@
-//ÎÄ±¾º¯Êý
+//ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½
 var Txt = {
-    /**
-     * Created by Administrator on 2017/4/14 0014.
-     */
-    /**
-     * ÉèÖÃÔªËØÎÄ±¾ÄÚÈÝ£¨¼æÈÝ°æ±¾£©
-     * @param ele
-     * @param str
-     */
-    setText: function (ele, str) {
-        if (typeof ele.innerText == "string") {
-            ele.innerText = str;
-        } else {
-            ele.textContent = str;
-        }
-    },
-    /**
-     * »ñÈ¡ÔªËØÎÄ±¾ÄÚÈÝ(¼æÈÝ°æ±¾)
-     * @param ele
-     * @returns {*}
-     */
-    getText: function (ele) {
-        if (typeof ele.innerText == "string") {
-            return ele.innerText;
-        } else {
-            return ele.textContent;
+        /**
+         * Created by Administrator
+         */
+        /**
+         * ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½Ý°æ±¾ï¿½ï¿½
+         * @param ele
+         * @param str
+         */
+        setText: function(ele, str) {
+            if (typeof ele.innerText == "string") {
+                ele.innerText = str;
+            } else {
+                ele.textContent = str;
+            }
+        },
+        /**
+         * ï¿½ï¿½È¡Ôªï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ý°æ±¾)
+         * @param ele
+         * @returns {*}
+         */
+        getText: function(ele) {
+            if (typeof ele.innerText == "string") {
+                return ele.innerText;
+            } else {
+                return ele.textContent;
+            }
         }
     }
-}
-//±êÇ©ÔªËØº¯Êý
+    //ï¿½ï¿½Ç©Ôªï¿½Øºï¿½ï¿½ï¿½
 var Tar = {
 
-    /**
-     * »ñÈ¡ÏÂ¸öÔªËØ£¬·â×°¼æÈÝµÄnextSiblingºÍnextElementSibling
-     * @param ele
-     * @returns {*}
-     */
-    getNextElement: function (ele) {
-        if (ele) {
-            // ÅÐ¶ÏÊäÈëÊÇ·ñ²»Îª¿Õ
-            if (ele.nextElementSibling) {//ÅÐ¶Ïµ±Ç°ä¯ÀÀÆ÷ÊÇ·ñÖ§³Ö´Ë¶ÔÏóµÄÊôÐÔ»ò·½·¨
-                return ele.nextElementSibling;
-            } else { //¼æÈÝIE8
-                ele = ele.nextSibling;//ÒòÎªÏÂÒ»¸ö½Úµã,ÓÐ¿ÉÄÜÊÇÎÄ±¾¡¢×¢ÊÍ¡¢»òÊÇ±êÇ©£¬ËùÒÔÐèÒªÅÐ¶Ï½ÚµãÀàÐÍ£¬²»ÖªµÀÑ­»·´ÎÊý£¬ÓÃwhileÀ´Ñ­»·ÅÐ¶Ï
-                while (ele.nodeType != 1) {
-                    ele = ele.nextSibling;
+        /**
+         * ï¿½ï¿½È¡ï¿½Â¸ï¿½Ôªï¿½Ø£ï¿½ï¿½ï¿½×°ï¿½ï¿½ï¿½Ýµï¿½nextSiblingï¿½ï¿½nextElementSibling
+         * @param ele
+         * @returns {*}
+         */
+        getNextElement: function(ele) {
+            if (ele) {
+                // ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½
+                if (ele.nextElementSibling) { //ï¿½Ð¶Ïµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Ö§ï¿½Ö´Ë¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ò·½·ï¿½
+                    return ele.nextElementSibling;
+                } else { //ï¿½ï¿½ï¿½ï¿½IE8
+                    ele = ele.nextSibling; //ï¿½ï¿½Îªï¿½ï¿½Ò»ï¿½ï¿½ï¿½Úµï¿½,ï¿½Ð¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½×¢ï¿½Í¡ï¿½ï¿½ï¿½ï¿½Ç±ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ð¶Ï½Úµï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Öªï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½whileï¿½ï¿½Ñ­ï¿½ï¿½ï¿½Ð¶ï¿½
+                    while (ele.nodeType != 1) {
+                        ele = ele.nextSibling;
+                    }
+                    return ele;
                 }
-                return ele;
             }
-        }
-    },
-    /**
-     * »ñÈ¡¸¸ÔªËØµÄ×îºóÒ»¸ö×Ó±êÇ©ÔªËØ½Úµã£¬·â×°¼æÈÝµÄlastChildºÍlastElementChild
-     * @param ele
-     * @returns {*}
-     */
-    getLastElement: function (ele) {
-        if (ele) {
-            if (ele.lastElementChild) {
-                return ele.lastElementChild;
-            } else {
-                ele = ele.lastChild;
-                while (ele.nodeType != 1) {
-                    ele = ele.previousSibling;
+        },
+        /**
+         * ï¿½ï¿½È¡ï¿½ï¿½Ôªï¿½Øµï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ó±ï¿½Ç©Ôªï¿½Ø½Úµã£¬ï¿½ï¿½×°ï¿½ï¿½ï¿½Ýµï¿½lastChildï¿½ï¿½lastElementChild
+         * @param ele
+         * @returns {*}
+         */
+        getLastElement: function(ele) {
+            if (ele) {
+                if (ele.lastElementChild) {
+                    return ele.lastElementChild;
+                } else {
+                    ele = ele.lastChild;
+                    while (ele.nodeType != 1) {
+                        ele = ele.previousSibling;
+                    }
+                    return ele;
                 }
-                return ele;
-            }
 
+            }
         }
     }
-}
-//¶¯»­Ïà¹Øº¯Êý
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½
 var Animation = {
-    /**
-     * ·â×°¶àÊôÐÔ¶¯»­ÒÆ¶¯º¯Êý
-     * @param obj ÐèÒªÒÆ¶¯µÄÔªËØ¶ÔÏó
-     * @param json ÐèÒªµÄ¶¯»­jsonÊý¾Ý
-     */
-    animate: function(obj, json,fn) {
-        clearInterval(obj.timeId);
-        var leader, step, target;
-        obj.timeId = setInterval(function () {
-            var flag = true;
-            for (var key in json) {
-                if (key == "opacity") { //Í¸Ã÷¶È
-                    leader = parseInt(Style.getStyle(obj, key) * 100) || 0;
-                    target = parseInt(json[key] * 100) || 0;
-                    step = target - leader;
-                    step = step / 10 > 0 ? Math.ceil(step / 10) : Math.floor(step / 10);
-                    leader = leader + step;
-                    obj.style[key] = leader / 100;
-                } else if (key == "zIndex") {//²ã¼¶
-                    leader = parseInt(Style.getStyle(obj, key)) || 0;
-                    target = parseInt(json[key]) || 0;
-                    step = target - leader;
-                    step = step / 10 > 0 ? Math.ceil(step / 10) : Math.floor(step / 10);
-                    leader = leader + step;
-                    obj.style[key] = leader;
-                } else {
-                    //»ñµÃÊôÐÔµ±Ç°Öµ¡£½«»ñÈ¡µ½µÄÊôÐÔÖµpxÈ¥µô£»ÅÅ³ýÌØÊâÇé¿ö»ñÈ¡µ½µÄÈçauto×ª»»µÄNaN
-                    leader = parseInt(Style.getStyle(obj, key)) || 0;
-                    //È¡µÃjsonÀïÃæ¸ÃÊôÐÔµÄÄ¿±êÖµ
-                    target = parseInt(json[key]) || 0;
-                    //¼ÆËã²½³¤
-                    step = target - leader;
-                    step = step / 10 > 0 ? Math.ceil(step / 10) : Math.floor(step / 10);
-                    //ÊôÐÔ¸³Öµ
-                    leader = leader + step;
-                    obj.style[key] = leader + "px";
+        /**
+         * ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½
+         * @param obj ï¿½ï¿½Òªï¿½Æ¶ï¿½ï¿½ï¿½Ôªï¿½Ø¶ï¿½ï¿½ï¿½
+         * @param json ï¿½ï¿½Òªï¿½Ä¶ï¿½ï¿½ï¿½jsonï¿½ï¿½ï¿½ï¿½
+         */
+        animate: function(obj, json, fn) {
+            clearInterval(obj.timeId);
+            var leader, step, target;
+            obj.timeId = setInterval(function() {
+                var flag = true;
+                for (var key in json) {
+                    if (key == "opacity") { //Í¸ï¿½ï¿½ï¿½ï¿½
+                        leader = parseInt(Style.getStyle(obj, key) * 100) || 0;
+                        target = parseInt(json[key] * 100) || 0;
+                        step = target - leader;
+                        step = step / 10 > 0 ? Math.ceil(step / 10) : Math.floor(step / 10);
+                        leader = leader + step;
+                        obj.style[key] = leader / 100;
+                    } else if (key == "zIndex") { //ï¿½ã¼¶
+                        leader = parseInt(Style.getStyle(obj, key)) || 0;
+                        target = parseInt(json[key]) || 0;
+                        step = target - leader;
+                        step = step / 10 > 0 ? Math.ceil(step / 10) : Math.floor(step / 10);
+                        leader = leader + step;
+                        obj.style[key] = leader;
+                    } else {
+                        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½Ç°Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÖµpxÈ¥ï¿½ï¿½ï¿½Å³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½auto×ªï¿½ï¿½ï¿½ï¿½NaN
+                        leader = parseInt(Style.getStyle(obj, key)) || 0;
+                        //È¡ï¿½ï¿½jsonï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½Ä¿ï¿½ï¿½Öµ
+                        target = parseInt(json[key]) || 0;
+                        //ï¿½ï¿½ï¿½ã²½ï¿½ï¿½
+                        step = target - leader;
+                        step = step / 10 > 0 ? Math.ceil(step / 10) : Math.floor(step / 10);
+                        //ï¿½ï¿½ï¿½Ô¸ï¿½Öµ
+                        leader = leader + step;
+                        obj.style[key] = leader + "px";
+                    }
+                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÃ»ï¿½Ðµï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ÖµÊ±ï¿½ï¿½flagï¿½ï¿½Îªfalse,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¶ï¿½Ê±ï¿½ï¿½
+                    if (leader != target) {
+                        flag = false;
+                    }
                 }
-                //ÓÐÈÎÒâÊôÐÔÖµÃ»ÓÐµ½´ïÄ¿±êÖµÊ±£¬flag¶¼Îªfalse,²»ÄÜÇå¿Õ¶¨Ê±Æ÷
-                if (leader != target) {
-                    flag = false;
+                //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ïµ½Ä¿ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½Ê±ï¿½ï¿½
+                if (flag) {
+                    clearInterval(obj.timeId);
+                    //fnï¿½ï¿½ï¿½ï¿½Çºï¿½ï¿½ï¿½ï¿½Ùµï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½
+                    if (typeof fn == "function") {
+                        fn();
+                    }
                 }
-            }
-            //ËùÓÐÊôÐÔÖµ´ïµ½Ä¿±êÖµºó²ÅÄÜÇå¿ÕÇå¿Õ¼ÆÊ±Æ÷
-            if (flag) {
-                clearInterval(obj.timeId);
-                //fnÈç¹ûÊÇº¯ÊýÔÙµ÷ÓÃ£¬·ñÔò²»Ö´ÐÐ
-                if(typeof fn == "function"){
-                    fn();
+            }, 40)
+        },
+        /**
+         * ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½
+         * @param obj ï¿½ï¿½Òªï¿½Æ¶ï¿½ï¿½ï¿½Ôªï¿½Ø¶ï¿½ï¿½ï¿½
+         * @param json ï¿½ï¿½Òªï¿½Ä¶ï¿½ï¿½ï¿½jsonï¿½ï¿½ï¿½ï¿½
+         */
+        animateQuick: function(obj, json, fn) {
+            clearInterval(obj.timeId);
+            var leader, step, target;
+            obj.timeId = setInterval(function() {
+                var flag = true;
+                for (var key in json) {
+                    if (key == "opacity") { //Í¸ï¿½ï¿½ï¿½ï¿½
+                        leader = parseInt(Style.getStyle(obj, key) * 100) || 0;
+                        target = parseInt(json[key] * 100) || 0;
+                        step = target - leader;
+                        step = step / 10 > 0 ? Math.ceil(step / 10) : Math.floor(step / 10);
+                        leader = leader + step;
+                        obj.style[key] = leader / 100;
+                    } else if (key == "zIndex") { //ï¿½ã¼¶
+                        leader = parseInt(Style.getStyle(obj, key)) || 0;
+                        target = parseInt(json[key]) || 0;
+                        step = target - leader;
+                        step = step / 10 > 0 ? Math.ceil(step / 10) : Math.floor(step / 10);
+                        leader = leader + step;
+                        obj.style[key] = leader;
+                    } else {
+                        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½Ç°Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÖµpxÈ¥ï¿½ï¿½ï¿½Å³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½auto×ªï¿½ï¿½ï¿½ï¿½NaN
+                        leader = parseInt(Style.getStyle(obj, key)) || 0;
+                        //È¡ï¿½ï¿½jsonï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½Ä¿ï¿½ï¿½Öµ
+                        target = parseInt(json[key]) || 0;
+                        //ï¿½ï¿½ï¿½ã²½ï¿½ï¿½
+                        step = target - leader;
+                        step = step / 10 > 0 ? Math.ceil(step / 10) : Math.floor(step / 10);
+                        //ï¿½ï¿½ï¿½Ô¸ï¿½Öµ
+                        leader = leader + step;
+                        obj.style[key] = leader + "px";
+                    }
+                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÃ»ï¿½Ðµï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ÖµÊ±ï¿½ï¿½flagï¿½ï¿½Îªfalse,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¶ï¿½Ê±ï¿½ï¿½
+                    if (leader != target) {
+                        flag = false;
+                    }
                 }
-            }
-        }, 40)
-    },
-    /**
-     * ·â×°¶àÊôÐÔ¶¯»­ÒÆ¶¯º¯Êý
-     * @param obj ÐèÒªÒÆ¶¯µÄÔªËØ¶ÔÏó
-     * @param json ÐèÒªµÄ¶¯»­jsonÊý¾Ý
-     */
-    animateQuick: function(obj, json,fn) {
-        clearInterval(obj.timeId);
-        var leader, step, target;
-        obj.timeId = setInterval(function () {
-            var flag = true;
-            for (var key in json) {
-                if (key == "opacity") { //Í¸Ã÷¶È
-                    leader = parseInt(Style.getStyle(obj, key) * 100) || 0;
-                    target = parseInt(json[key] * 100) || 0;
-                    step = target - leader;
-                    step = step / 10 > 0 ? Math.ceil(step / 10) : Math.floor(step / 10);
-                    leader = leader + step;
-                    obj.style[key] = leader / 100;
-                } else if (key == "zIndex") {//²ã¼¶
-                    leader = parseInt(Style.getStyle(obj, key)) || 0;
-                    target = parseInt(json[key]) || 0;
-                    step = target - leader;
-                    step = step / 10 > 0 ? Math.ceil(step / 10) : Math.floor(step / 10);
-                    leader = leader + step;
-                    obj.style[key] = leader;
-                } else {
-                    //»ñµÃÊôÐÔµ±Ç°Öµ¡£½«»ñÈ¡µ½µÄÊôÐÔÖµpxÈ¥µô£»ÅÅ³ýÌØÊâÇé¿ö»ñÈ¡µ½µÄÈçauto×ª»»µÄNaN
-                    leader = parseInt(Style.getStyle(obj, key)) || 0;
-                    //È¡µÃjsonÀïÃæ¸ÃÊôÐÔµÄÄ¿±êÖµ
-                    target = parseInt(json[key]) || 0;
-                    //¼ÆËã²½³¤
-                    step = target - leader;
-                    step = step / 10 > 0 ? Math.ceil(step / 10) : Math.floor(step / 10);
-                    //ÊôÐÔ¸³Öµ
-                    leader = leader + step;
-                    obj.style[key] = leader + "px";
+                //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ïµ½Ä¿ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½Ê±ï¿½ï¿½
+                if (flag) {
+                    clearInterval(obj.timeId);
+                    //fnï¿½ï¿½ï¿½ï¿½Çºï¿½ï¿½ï¿½ï¿½Ùµï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½
+                    if (typeof fn == "function") {
+                        fn();
+                    }
                 }
-                //ÓÐÈÎÒâÊôÐÔÖµÃ»ÓÐµ½´ïÄ¿±êÖµÊ±£¬flag¶¼Îªfalse,²»ÄÜÇå¿Õ¶¨Ê±Æ÷
-                if (leader != target) {
-                    flag = false;
-                }
-            }
-            //ËùÓÐÊôÐÔÖµ´ïµ½Ä¿±êÖµºó²ÅÄÜÇå¿ÕÇå¿Õ¼ÆÊ±Æ÷
-            if (flag) {
-                clearInterval(obj.timeId);
-                //fnÈç¹ûÊÇº¯ÊýÔÙµ÷ÓÃ£¬·ñÔò²»Ö´ÐÐ
-                if(typeof fn == "function"){
-                    fn();
-                }
-            }
-        }, 15)
-    }
+            }, 15)
+        }
 
-}
-////ÑùÊ½Ïà¹Øº¯Êý
+    }
+    ////ï¿½ï¿½Ê½ï¿½ï¿½Øºï¿½ï¿½ï¿½
 var Style = {
-    /**
-     * ·â×°ÁËÒ»¸ö»ñµÃ¶ÔÏóÊôÐÔÖµµÄ¼æÈÝº¯Êý
-     * @param obj
-     * @param attr
-     * @returns {*}
-     */
-    getStyle: function (obj, attr) {
-        if (obj.currentStyle) {
-            return obj.currentStyle[attr];
-        } else {
-            return getComputedStyle(obj, null)[attr];
+        /**
+         * ï¿½ï¿½×°ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Ä¼ï¿½ï¿½Ýºï¿½ï¿½ï¿½
+         * @param obj
+         * @param attr
+         * @returns {*}
+         */
+        getStyle: function(obj, attr) {
+            if (obj.currentStyle) {
+                return obj.currentStyle[attr];
+            } else {
+                return getComputedStyle(obj, null)[attr];
+            }
         }
     }
-}
-/**
- * ·â×°Ò»¸öÌáÈ¡Ò³Ãæ¹ö¶¯×ø±êµÄ¼æÈÝ°æ±¾µÄº¯Êý
- * @returns {{scrollTop: (Number|number), scroolLeft: (Number|number|*)}}
- */
-function scroll(){
-    return{
-        scrollTop:window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0,
-        scroollLeft:window.pageXOffset||document.documentElement.scrollLeft||document.body.scroollLeft||0
+    /**
+     * ï¿½ï¿½×°Ò»ï¿½ï¿½ï¿½ï¿½È¡Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ý°æ±¾ï¿½Äºï¿½ï¿½ï¿½
+     * @returns {{scrollTop: (Number|number), scroolLeft: (Number|number|*)}}
+     */
+function scroll() {
+    return {
+        scrollTop: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0,
+        scroollLeft: window.pageXOffset || document.documentElement.scrollLeft || document.body.scroollLeft || 0
     }
 }
 /**
- * ·â×°Ò»¸ö»ñÈ¡Ò³Ãæ´óÐ¡¼æÈÝ°æ±¾µÄº¯Êý
+ * ï¿½ï¿½×°Ò»ï¿½ï¿½ï¿½ï¿½È¡Ò³ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½Ý°æ±¾ï¿½Äºï¿½ï¿½ï¿½
  * @returns {{width: (Number|number), height: (Number|number)}}
  */
-function client(){
-    return{
-        clientWidth:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth||0,
-        clientHeight:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight||0
+function client() {
+    return {
+        clientWidth: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 0,
+        clientHeight: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 0
     };
 }
 /**
- * ·â×°Ò»¸ö¼æÈÝÐÔµÄÒ³Ãæ×ø±êpageX pageY»ñÈ¡º¯Êý
+ * ï¿½ï¿½×°Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½pageX pageYï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
  * @param e
  * @returns {{pageX: (*|Number), pageY: (*|Number)}}
  */
-function page(e){//Ö÷ÒªÕë¶ÔIE8
-    return{
-        pageX: e.pageX || e.clientX + document.documentElement.scrollLeft,//IE8Ö§³Ö´ËÊôÐÔ
-        pageY: e.pageY|| e.clientY+document.documentElement.scrollTop
+function page(e) { //ï¿½ï¿½Òªï¿½ï¿½ï¿½IE8
+    return {
+        pageX: e.pageX || e.clientX + document.documentElement.scrollLeft, //IE8Ö§ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½
+        pageY: e.pageY || e.clientY + document.documentElement.scrollTop
     }
 }
-//ÊÂ¼þÏà¹Øº¯Êý,ÊÂ¼þ¹¤¾ß
+//ï¿½Â¼ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½,ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
 var eventTolls = {
     /**
-     * ·â×°Ò»¸ö¼æÈÝµÄ×¢²áÊÂ¼þµÄº¯Êý
+     * ï¿½ï¿½×°Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½×¢ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Äºï¿½ï¿½ï¿½
      * @param obj
      * @param type
      * @param listener
      */
-    addEventListener: function (obj, type, listener) {
+    addEventListener: function(obj, type, listener) {
         if (obj.addEventListener) {
             obj.addEventListener(type, listener, false);
         } else if (obj.attachEvent) {
@@ -243,12 +243,12 @@ var eventTolls = {
         }
     },
     /**
-     * ·â×°¼æÈÝ°æ±¾µÄÊÂ¼þÒÆ³ýº¯Êý
+     * ï¿½ï¿½×°ï¿½ï¿½ï¿½Ý°æ±¾ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Æ³ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param obj
      * @param type
      * @param listener
      */
-    removeEventListener: function (obj, type, listener) {
+    removeEventListener: function(obj, type, listener) {
         if (obj && obj.removeEventListener) {
             obj.removeEventListener(type, listener, false);
         } else if (obj && obj.detachEvent) {
@@ -258,10 +258,10 @@ var eventTolls = {
         }
     },
     /**
-     * ·â×°¼æÈÝÐÔµÄ×èÖ¹ÊÂ¼þÃ°ÅÝµÄº¯Êý
+     * ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½Ö¹ï¿½Â¼ï¿½Ã°ï¿½ÝµÄºï¿½ï¿½ï¿½
      * @param e
      */
-    stopPropagation: function (e) {
+    stopPropagation: function(e) {
         if (e) {
             if (e.stopPropagation) {
                 e.stopPropagation();
@@ -271,11 +271,11 @@ var eventTolls = {
         }
     },
     /**
-     * ·â×°»ñÈ¡Ô­Ê¼´¥·¢ÊÂ¼þÔ´µÄÊÂ¼þÔ´µÄº¯Êý
+     * ï¿½ï¿½×°ï¿½ï¿½È¡Ô­Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½Ô´ï¿½ï¿½ï¿½Â¼ï¿½Ô´ï¿½Äºï¿½ï¿½ï¿½
      * @param e
      * @returns {*}
      */
-    target: function (e) {
+    target: function(e) {
         if (e) {
             if (e.target) {
                 return e.target;
@@ -285,8 +285,3 @@ var eventTolls = {
         }
     }
 }
-
-
-
-
-
